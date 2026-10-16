@@ -94,3 +94,26 @@ Results 包含文本，图片，表单
           image:{src:"images/G8-osmosispotatoresults.png", width:"400px", height:"auto", fit:"contain"},
            },
          ],
+
+
+两张图片并排排列
+{
+        image: {
+          src: "images/cellsize-results1.png",
+          alt: "Agar cubes before adding vinegar",
+          width: "300px",
+          height: "auto",
+          fit: "contain",
+          caption: "Before adding vinegar"
+        }
+      },
+      {
+        image: {
+          src: "images/cellsize-results2.png",
+          alt: "Agar cubes after adding vinegar",
+          width: "300px",
+          height: "auto",
+          fit: "contain",
+          caption: "After adding vinegar"
+        }
+      }

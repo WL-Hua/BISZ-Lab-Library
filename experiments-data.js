@@ -1040,7 +1040,7 @@ const experiments = [
   {
     id: "algae-beads",
     grade: "Honor Biology",
-    title: "Algae Immobilisation Beads",
+    title: "Algae Beads",
     subject: "Biology · Photosynthesis",
     summary: "Create immobilised algae beads using sodium alginate and calcium chloride.",
     image: "",
