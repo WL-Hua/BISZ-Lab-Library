@@ -1,4 +1,5 @@
 const experiments = [
+  // Grade 6 Experiments
   {
     id: "microscopy",
     grade: "G6",
@@ -25,6 +26,7 @@ const experiments = [
     note:["12 microscopes are available for use in the lab.",
           "Be careful when handling the glass slides."]
   },
+
   {
     id: "heart-rate-lab",
     grade: "G6",
@@ -38,8 +40,9 @@ const experiments = [
       "Use the timer as directed by the teacher to measure and record heart rate."
     ],
     cleaningTips: ["Return each timer to its designated place."],
-    note: "The lab book says to press the middle button, then the right and left buttons to cancel the alarm."
+    note: "Press the middle button, then the right and left buttons to cancel the alarm."
   },
+
   {
     id: "chicken-wing-dissection",
     grade: "G6",
@@ -62,6 +65,7 @@ const experiments = [
     ],
     note: "Each pair get one chicken wing."
   },
+
   {
     id: "bacterial-culture-g6",
     grade: "G6",
@@ -88,6 +92,7 @@ const experiments = [
       "Incubated at 37°C for 2 days, put a thermometer in the incubator to check the temperature."
     ]
   },
+
   {
     id: "heart-dissection",
     grade: "G6",
@@ -109,6 +114,7 @@ const experiments = [
     ],
     note: "Only handle the specimen and sharp tools under teacher supervision."
   },
+
   {
     id: "lung-dissection",
     grade: "G6",
@@ -134,6 +140,7 @@ const experiments = [
     ],
     note: "One lung for dssection to check the structure and one lung for air blow. Only handle by teacher."
   },
+
   {
     id: "brain-dissection",
     grade: "G6",
@@ -155,6 +162,7 @@ const experiments = [
     ],
     note: ["This is a teacher-led demonstration; handle specimens only with permission. \n Do Not get the freezeing brain!\nGet the FRESH one!"]
   },
+ // Grade 7 Experiments
   {
     id: "bacterial-culture-g7",
     grade: "G7",
@@ -179,6 +187,7 @@ const experiments = [
     ],
     note: "Culture plates must remain sealed and be handled only as instructed by the teacher."
   },
+
   {
     id: "gram-staining-g7",
     grade: "G7",
@@ -208,6 +217,7 @@ const experiments = [
     ],
     note: "Step1-2 is done by lab teacher for whole class.\n Students should work in tray in case of any spills."
   },
+
   {
     id: "fungi-planting",
     grade: "G7",
@@ -235,6 +245,7 @@ const experiments = [
     ],
     note: "<strong>DO NOT LEAVE THE KIT TO LONG WHEN MUSHROOMS ARE READY</strong>. \n Harvest them promptly to avoid overgrowth and spore release."
   },
+
   {
     id: "photosynthesis-starch",
     grade: "G7",
@@ -268,7 +279,9 @@ const experiments = [
       "Wash hands after the activity."
     ],
     note: " Eight elements need 12 pots of green leaves and 12 pots of white leaves.\n Teacher will perform heating steps."
-  },{
+  },
+  
+  {
     id: "peanut-planting",
     grade: "G7",
     title: "Peanut Planting",
@@ -291,6 +304,7 @@ const experiments = [
     ],
     note: "The peanut planting experiment is a long-term observation. \n Students should monitor the growth and record observations regularly."
   },
+
   {
     id: "flower-dissection",
     grade: "G7",
@@ -332,13 +346,13 @@ const experiments = [
     ],
     note: "Purchase fresh flowers 10days before the experiment. \n Get a demo for teacher. \n Be aware of allergies to pollen or plant material."
   },
+
   {
     id: "animals dissection",
     grade: "G7",
     title: "Frog & Mouse dissection",
     subject: "Biology · Classification of Vertebrates",
     summary: "Observe the internal structures of a frog and mouse. Understand the anatomy and physiology of these animals.",
-    image: {src:'images/frogmouse.png', fit: 'cover',position: '30% 95%'},
     objective: "Understand the anatomy and physiology of the Vertebrates, amphibians.",
     materials: ["Mouse [冷冻小白鼠] (each pair has one)","Frog [林蛙] (each pair has one)","dissection tray","scalpel","scissors","tweezers","gloves"],
     
@@ -357,6 +371,7 @@ const experiments = [
     ],
     note: " Bad smell with the defrosted specimens. \n Teacher will demonstrate the dissection steps. \n Students should wear gloves and follow safety instructions."
   },
+
   {
     id: "food-tests",
     grade: "G7",
@@ -395,6 +410,7 @@ const experiments = [
     ],
     note: "Do not taste reagents or samples; follow safety instructions."
   },
+ // Grade 8 Experiments
   {
     id: "water-properties",
     grade: "G8",
@@ -443,6 +459,7 @@ const experiments = [
     ],
     note: "Station6 only for demo. \n Check the bunsen burner regularly to avoid automatic shut off."
   },
+
   {
     id: "catalase-potato",
     grade: "G8",
@@ -485,8 +502,9 @@ const experiments = [
     cleaningTips: ["Dispose the test tubes."
     
     ],
-    note: "Step1-2 done by lab tech."
+    note: "Step1-2 done by lab tech.\n Test tube with baking soda may produce strong form because of the reaction produce CO2 gas."
   },
+
   {
     id: "catalase-potato-version2",
     grade: "G8",
@@ -498,7 +516,9 @@ const experiments = [
     materials: ["Potato mash", "Test tubes", "Hydrogen peroxide", "Water","Hot water bath","Ice bath"],
     materialsImage: {src: "images/potatocatalase-v2materials.png", width: "400px", height: "auto", fit: "contain"},
     procedure: [
-      "Add 0.5 ml of hydrogen peroxide to each test tube. Label each test tube with its temperature and each cap with the group number.",
+      {text: "Add 0.5 ml of hydrogen peroxide to each test tube. Label each test tube with its temperature and each cap with the group number.",
+        image:{src:"images/0.5ml-dropper.png", width:"100px", height:"auto", fit:"contain"}
+      },
       {
         text: "Place the test tubes in their corresponding conditions for 5 minutes.",
         table: {
@@ -534,13 +554,22 @@ const experiments = [
    
     results: [
       {text:"The results of the catalase activity under different conditions are as follows:",
-        image:{src:"images/potatocatalase-v2results.png", width:"400px", height:"auto", fit:"contain"}}
+        image:{src:"images/potatocatalase-v2results.png", width:"300px", height:"auto", fit:"contain"},
+        table: {
+          headers: ["Temperature", "Foam Height (cm)"],
+          rows: [
+            ["0°C", "4.3"],
+            ["24°C", "6.6"],
+            ["40°C", "6.9"],
+            ["60°C", "2.3"]
+          ]
+        }
+      }
     ],
-    cleaningTips: ["Dispose the test tubes."
-    
-    ],
+    cleaningTips: ["Dispose the test tubes."],
     note: "Step1-2 done by lab tech."
-  },
+    },
+
    {
     id: "G8-cell-size",
     grade: "G8",
@@ -549,7 +578,7 @@ const experiments = [
     summary: "Use agar cubes to model diffusion and the surface-area-to-volume ratio.",
     image: "",
     objective: "Investigate how agar cube size affects diffusion distance and surface-area-to-volume ratio.",
-    materials: ["Agar powder", "Water", "pH indicator", "Sodium hydroxide (optional)", "Vinegar", "Timer", "Ruler", "Knife", "Beakers"],
+    materials: ["Agar powder", "Water", "pH indicator", "Sodium hydroxide (for phenolphthalein)","Bromothymol blue", "Vinegar", "Timer", "Ruler", "Knife", "Beakers"],
     materialsImage: {src: "images/cellsize-materials.png", width: "300px", height: "auto", fit: "contain"},
     procedure: [
       {text:"The teacher prepares the agar cubes. Use 1000ml beaker with 12g agar powder + 700ml boiling water heated to the solution turn as the pic show.",
@@ -589,9 +618,9 @@ const experiments = [
             "Penetration (%)"
           ],
           rows: [
-            ["3", "54", "27", "2:1", "2.8", "0.20", "21.952", "5.048", "18.70%"],
+            ["1", "6", "1", "6:1", "0.0", "1.00", "0", "1", "100.00%"],
             ["2", "24", "8", "3:1", "1.6", "0.40", "4.096", "3.904", "48.80%"],
-            ["1", "6", "1", "6:1", "0.0", "1.00", "0", "1", "100.00%"]
+            ["3", "54", "27", "2:1", "2.8", "0.20", "21.952", "5.048", "18.70%"]
           ]
         }
       },
@@ -623,8 +652,9 @@ const experiments = [
         image:{src:"images/cellsize-cleanup.jpeg", width:"400px", height:"auto", fit:"contain"}
       }
     ],
-    note: ""
+    note: "Table group"
   },
+
   {
     id: "osmosis-potato",
     grade: "G8",
@@ -662,6 +692,7 @@ const experiments = [
     ],
     note: "Students make their own salt solution."
   },
+
   {
     id: "beetroot-membrane-permeability",
     grade: "G8",
@@ -691,6 +722,7 @@ const experiments = [
         table: {
           headers: ["Temperature", "Absorbance"],
           rows: [
+            ["water", "0.000000"],
             ["0°C", "0.021855"],
             ["20°C", "0.069471"],
             ["40°C", "0.192902"],
@@ -700,12 +732,13 @@ const experiments = [
       },
          ],
     cleaningTips: [
-      "Dispose of beetroot and sample liquids as instructed.",
+      "Dispose the test tubes with beetroot.",
       "Rinse the cuvettes and return the colorimeter equipment.",
-      "Clean the work area and wash hands."
+      "Clean the lab table and wash hands."
     ],
-    note: "Use the hot-water bath and cork borer under teacher supervision."
+    note: "Teacher will make the beetroot cylinders.Student will get the beetroot has been cut into cylinders and rinsed."
   },
+
   {
     id: "leaf-disk",
     grade: "G8",
@@ -714,14 +747,19 @@ const experiments = [
     summary: "Observe leaf disks floating as photosynthesis produces oxygen.",
     image: "",
     objective: "Use leaf disks to compare photosynthesis rates under different conditions.",
-    materials: ["Spinach leaves", 'Hole punch', "Syringe", "Bicarbonate solution", "Light source"],
+    materials: ["Spinach leaves", 'Hole punch', "Syringe", "Bicarbonate solution", "Light source","timer","Beakers","Tweezer","Marker",
+      "Container for leaf disks"],
+    materialsImage: {src: "images/leafdisk-materials.png", width: "400px", height: "auto", fit: "contain"},
     procedure: [
       "Prepare the 0.5% CO₂ solution. Add 10ml diluted dish soap(稀释到没有泡泡) and stir gently until fully dissolved.", 
       "Use a hole punch to cut 20 leaf disks from spinach leaves. Avoid major veins.", 
       "Place the leaf disks into a syringe and add a small amount of solution.",
       "Gently pull the plunger to remove air from the disks until they sink.", 
-      "Pour 10 leaf disks into a cup containing the 0.2% sodium bicarbonate (CO₂) solution.", "6. Pour another 10 leaf disks into a second cup containing 100 mL pure water.", 
-      "Place both cups under the same lamp, ensuring they are the same distance from the light source so that both receive equal light intensity.", 
+      "Pour 10 leaf disks into a cup containing the 0.2% sodium bicarbonate (CO₂) solution.", 
+      "Pour another 10 leaf disks into a second cup containing 100 mL pure water.", 
+      {text: "Place both cups under the same lamp, ensuring they are the same distance from the light source so that both receive equal light intensity.",
+        image:{src:"images/leafdisk-procedure1.png", width:"200px", height:"auto", fit:"contain"}
+      },
       "Start the timer.", 
       "Record the number of leaf disks floating at 1-minute intervals for 10 minutes."
 
@@ -749,7 +787,7 @@ const experiments = [
       "Anti-B	----  BaCl2",
     "droppers","test paper (black rubbish bag)"],
     materialsImage: {src: "images/simluatedbloodtest-materials.png", width: "400px", height: "auto", fit: "contain"},
-    procedure: ["All the testing sample are solution (no accurate concentration). Dissolve them if it’s powder.",
+    procedure: ["All the testing sample are solution (no accurate concentration). Dissolve them if it's powder.",
           "Add red and few green food color to make blood sample look like blood.",
     "Get a black background (Just black rubbish bin bag) to have a drop of all blood type sample.",
     "Drop Antibodies with the samples to check the blood type.",
@@ -774,6 +812,43 @@ const experiments = [
   },
  
   {
+    id: "dna-extraction-g8",
+    grade: "G8",
+    title: "DNA Extraction",
+    subject: "Biology · Genetics",
+    summary: "Extract DNA from strawberries using common household items.",
+    image: "",
+    objective: "Isolate and observe the extracted DNA from the fruit.",
+    materials: ["strawberries(each pair has 3)","paper cup","salt","dish soap","water","alcohol","Strainer","test tube","spoon","stirring rod"],
+   
+    procedure: [
+    {heading: "Make extraction solution:"},
+    {text: "Paper Cup with salt ( Lab Tech will put salt into it advance), Students add 2-3 pump dish soap into paper cup, then add tape water. Use stirring rod to stir it to make it dissolve completely."},
+    {heading: "Mash the fruit in the food bag:"},
+    {text: "Add the extraction solution (water, soap, and salt mixture) into the food bag with the whole strawberry."},
+    {text: "Seal the bag and gently squeeze and knead it with your hands for 1-2 minutes, mashing the strawberry into a slurry. Make sure the solution thoroughly mixes with the strawberry."},
+    {heading: "Filter the mixture:"},
+    {text: "Use a strainer put upon the paper cup. Carefully pour fruit mixture through the strainer to separate the liquid from the solid pieces. The filtered liquid will contain the extracted DNA."}
+    ],
+    results: [
+      "There will be white, stringy strands visible in the liquid, which is the extracted DNA.",
+      {image:{src:"images/G8-DNA-extraction-result.png", width:"300px", height:"auto", fit:"contain"}}
+    ],
+   
+    results: [
+      "There will be white, stringy strands visible in the liquid, which is the extracted DNA.",
+      {image:{src:"images/G8-DNA-extraction-result.png", width:"300px", height:"auto", fit:"contain"}}
+    ], 
+    cleaningTips: [
+      "Pour any liquid to the ziplock bag.",
+      "Throw everything into the bio-hazard bin."
+    ],
+  
+    note: "Pair work. Each pair will get 3 strawberries. Remind students with spills of strawberry juice to clean up immediately."
+    },
+
+    //Honor Biology Experiments
+  {
     id: "ruler-drops",
     grade: "Honor Biology",
     title: "Ruler Drops",
@@ -791,11 +866,39 @@ const experiments = [
       "Repeat steps 1-4 with student # 2 switching hands.",
       "Repeat steps 1-5 with student #1 catching the ruler and student #2 dropping.",
 
-
     ],
-    cleaningTips: ["Return the ruler to the designated tray."],
+    cleaningTips: ["Return the ruler to the teacher."],
     note: "The lab book lists the activity title and pair setup but does not include further procedure details."
   }, 
+
+  {
+    id: "honor-properties of water",
+    grade: "Honor Biology",
+    title: "Properties of Water",
+    subject: "Biology · Properties of Water",
+    summary: "Investigate the unique properties of water and their significance.",
+    image: "",
+    objective: "Learn about the properties of water and how it acts.",
+    materials: ["Penny", "water", "soap", "pipette", "paper towel", "paper cup",
+      "Each Group have two paper Cup ( one for water, one for soap water), 2 droppers, paper towel, one coin."],
+    procedure: [
+      "Obtain a DRY penny and place it on a DRY paper towel.",
+      "Using a clean pipette, add tape water to the penny drop by drop until it overflows.\n <strong>Be sure to count the drops!</strong> Record the number of drops.</strong>",
+      "Repeat steps 1-2 for a total of five trials or do once for each group and combine the whole class data.",
+      "Take a cleean paper cup, add soap and tape water to make soap water. ",
+      {heading:"If choose not make soap water:"},
+      "Rinse, dry, and add soap directly to the penny.",
+      "Using a clean pipette, add soap water to the penny drop by drop until it overflows. Be sure to count the drops! Record the number of drops.",
+    ],
+    results: ["With water 60-80 drops	\nWith soap water 15-30 drops"],
+    cleaningTips: [
+      "Pour the water and soap water down the sink.",
+      "Wipe the penny and paper towel dry.",
+      "Return the pipette to the teacher."
+    ],
+    note: ""
+  },
+
   {
     id: "lactase-enzyme",
     grade: "Honor Biology",
@@ -803,20 +906,46 @@ const experiments = [
     subject: "Biology · Enzymes",
     summary: "Compare the effect of lactase on milk and different sugars.",
     image: "",
-    objective: "Observe the effect of lactase and controls using Benedict's reagent.",
-    materials: ["Milk", "Lactase", "Sugar samples", "Benedict's reagent"],
+    objective: "To examine the effect of lactase on lactose, sucrose, and glucose and to infer how denaturing lactase affects the enzyme reaction",
+    materials: ["test tubes","pipets","Beakers","Milk","Lactase Enzyme Tablets","Hot Water Bath","Sucrose Solution",
+      "Glucose Solution","Benedict's Solution","Distilled Water","Ice Bath",
+      "Each group have one benedict's solution, test tube rack with 7 test tubes.", 
+      "Set up two filling stations with Milk, Sucrose, Glucose, Lactase, denatured lactase, water."],
+      materialsImage: {src: "images/lactase-enzyme-materials.png", width: "300px", height: "auto", fit: "contain"},
     procedure: [
       "Label tubes A to G and add the assigned treatments.",
-      "Add Benedict's solution to each tube.",
-      "Heat the tubes in a water bath and record each colour change."
+      "Add the right substance to each tube.  Use a different pipet for each liquid.<strong>Do NOT mix up the pipets</strong>",
+      "Gently swirl the contents of each tube and let them completely mix.",
+      "Add 1 ml of Benedict's solution to each test tube.",
+      "Put a rubber band around your test tubes and put them in the hot water bath for five minutes. ",
+      "Remove the test tubes from the water bath and let them cool for 3 minutes.",
+      "Observe the color change in each test tube and record the results."
+    ],
+    results: [
+      {text: "The results of the lactase enzyme experiment are as follows:",
+      image:{src:"images/lactase-enzyme-results.png", width:"200px", height:"auto", fit:"contain"},
+      table: {
+        headers: ["Test Tube", "Contents", "Color Change"],
+        rows: [
+          ["A", "2ml Milk + 1ml Lactase", "Yellow"],
+          ["B", "2ml Milk + 1ml Water", "Yellow"],
+          ["C", "2ml Sucrose + 1ml Denatured Lactase", "Light orange"],  
+          ["D", "2ml Sucrose + 1ml Lactase", "Blue"],
+          ["E", "2ml Glucose + 1ml Water", "Blue"],
+          ["F", "2ml Glucose + 1ml Lactase", "Red"],
+          ["G", "2ml Distilled Water + 1ml Water", "Red"]]
+        },
+        }
+    
     ],
     cleaningTips: [
-      "Dispose of reagent waste safely.",
-      "Clean test tubes and equipment.",
-      "Wash hands after the experiment."
+      "Everything in test tubes pour into sink. Use test tube brush to clean up the test tube and put it back to trolley or table.",
+      "Remove the tapes on the test tubes.",
+      "Do not pour the unused benedict's solution into sink! Keep them."
     ],
     note: "Heat is involved; use caution and teacher supervision."
   },
+
   {
     id: "mcmush-happy-meal-food-tests",
     grade: "Honor Biology",
@@ -825,7 +954,8 @@ const experiments = [
     summary: "Test Happy Meal food slurry for monosaccharides, polysaccharides, proteins and lipids.",
     image: "",
     objective: "Use indicator reagents to test food samples and record the results.",
-    materials: ["McDonald's Happy Meal food samples", "Blender", "Benedict's reagent", "Lugol's iodine", "Sudan III reagent", "Biuret solution 1 (NaOH)", "Biuret solution 2 (CuSO₄)", "24-well plates", "Test tubes and racks", "Water bath", "Glucose solution", "Starch solution", "Egg-white solution", "Vegetable oil", "Distilled water", "Markers"],
+    materials: ["McDonald's Happy Meal food samples", "Blender", "Benedict's reagent", "Lugol's iodine (into dropper bottles)", "Sudan III reagent(into dropper bottles)", "Biuret solution 1 (NaOH)", "Biuret solution 2 (CuSO₄)", "24-well plates", "Test tubes and racks", "Water bath", "Glucose solution", "Starch solution", "Egg-white solution", "Vegetable oil", "Distilled water", "Markers"],
+    materialsImage: {src: "images/mcmush-materials.png", width: "200px", height: "auto", fit: "contain"},
     procedure: [
       { heading: "Monosaccharide Test" },
       { text: "Place about 3 ml each of glucose solution, distilled water and food slurry into separate labelled test tubes." },
@@ -841,6 +971,29 @@ const experiments = [
       { text: "Place about 2 ml each of vegetable oil, distilled water and food slurry into separate wells." },
       { text: "Add 0.5 ml of Sudan III solution to each well. Observe and record the results." }
     ],
+    results: 
+     [ { text: "The results of the food tests are as follows:",},
+        {
+        image: {
+          src: "images/mcmush-results1.png",
+          alt: "Monosaccharide test results",
+          width: "300px",
+          height: "auto",
+          fit: "contain",
+          caption: "Monosaccharide test"
+        }
+      },
+      {
+        image: {
+          src: "images/mcmush-results2.png",
+          alt: "Polysaccharide test results",
+          width: "300px",
+          height: "auto",
+          fit: "contain",
+          caption: "Polysaccharide, Protein, Lipid test"
+        }
+      },
+    ],   
     cleaningTips: [
       "Dispose of food samples and reagent waste as instructed.",
       "Clean the well plates, test tubes and work surfaces.",
