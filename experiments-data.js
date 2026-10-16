@@ -955,7 +955,7 @@ const experiments = [
     image: "",
     objective: "Use indicator reagents to test food samples and record the results.",
     materials: ["McDonald's Happy Meal food samples", "Blender", "Benedict's reagent", "Lugol's iodine (into dropper bottles)", "Sudan III reagent(into dropper bottles)", "Biuret solution 1 (NaOH)", "Biuret solution 2 (CuSO₄)", "24-well plates", "Test tubes and racks", "Water bath", "Glucose solution", "Starch solution", "Egg-white solution", "Vegetable oil", "Distilled water", "Markers"],
-    materialsImage: {src: "images/mcmush-materials.png", width: "200px", height: "auto", fit: "contain"},
+    materialsImage: {src: "images/mcmush-materials.png", width: "400px", height: "auto", fit: "contain"},
     procedure: [
       { heading: "Monosaccharide Test" },
       { text: "Place about 3 ml each of glucose solution, distilled water and food slurry into separate labelled test tubes." },
@@ -977,7 +977,7 @@ const experiments = [
         image: {
           src: "images/mcmush-results1.png",
           alt: "Monosaccharide test results",
-          width: "300px",
+          width: "200px",
           height: "auto",
           fit: "contain",
           caption: "Monosaccharide test"
