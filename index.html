@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BISZ BIO Laboratory resources organized by grade">
+    <title>BISZ Lab Resources</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="index.html">BISZ <span>Lab Resources</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#grades">Resources</a>
+          <a href="#about">How it works</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <p class="eyebrow">LEARN · EXPLORE · DISCOVER</p>
+          <h1>WELCOME TO<br><span>BISZ BIOLOGY LIBRARY</span></h1>
+          <p class="hero-description">
+            Browse experiments by grade. Open any experiment to see its objectives, materials, procedures and safety notes.
+          </p>
+          <a class="button button-primary" href="#grades">Browse experiments <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-shape" aria-hidden="true"></div>
+      </section>
+
+      <section class="container resources-section" id="grades">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BROWSE BY GRADE</p>
+            <h2>Choose a grade</h2>
+          </div>
+          <p class="section-note">Choose a grade, then select an experiment to view its details.</p>
+        </div>
+        <div id="grade-list" class="grade-list" aria-live="polite"></div>
+      </section>
+
+      <section class="info-section" id="about">
+        <div class="container info-grid">
+          <div>
+            <p class="eyebrow">HOW IT WORKS</p>
+            <h2>Start exploring in three steps</h2>
+          </div>
+          <ol class="steps">
+            <li><strong>Choose a grade</strong><span>Find experiments for your learning stage.</span></li>
+            <li><strong>Open an experiment</strong><span>Read the objectives, materials and full procedure.</span></li>
+            <li><strong>Work safely</strong><span>Read the safety notes and work with teacher supervision.</span></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">BISZ Lab Resources <span>·</span> Learning starts with curiosity</div>
+    </footer>
+    <script src="experiments-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
